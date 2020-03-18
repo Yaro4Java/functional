@@ -1,0 +1,16 @@
+
+
+java:S1319£"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÿŞàüÿÿÿÿ8Åäœ¦.
+H
+java:S3398…"%Move this method into "CacheCleaner".(§ò©Øúÿÿÿÿ8Åäœ¦.
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(çâÃÜıÿÿÿÿ8¨¶ş.
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(¾™ø¸ùÿÿÿÿ8¹ÿö.
+s
+java:S1104P"VMake insertTime a static final constant or non-public and provide accessors if needed.(Ä²‹8Åäœ¦.
+Z	java:S106s"9Replace this use of System.out or System.err by a logger.(šãÜ‘øÿÿÿÿ8Åäœ¦.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ñÓÖÍ8ä‹ùö.
+[	java:S106–"9Replace this use of System.out or System.err by a logger.(êè¨õûÿÿÿÿ8Åäœ¦.
+r
+java:S1104N"PMake data a static final constant or non-public and provide accessors if needed.(ñğÙ…şÿÿÿÿ8Åäœ¦.
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(™Ìšßıÿÿÿÿ8™ß¦.
+Z	java:S106o"9Replace this use of System.out or System.err by a logger.(¬Û€Úÿÿÿÿÿ8Åäœ¦.

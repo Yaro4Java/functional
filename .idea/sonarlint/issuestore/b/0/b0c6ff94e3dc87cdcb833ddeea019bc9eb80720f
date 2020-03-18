@@ -1,0 +1,7 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(êêÁ÷üÿÿÿÿ8ş“ƒĞ.
+Z	java:S106L"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Ù€…©.
+T
+java:S3655#"7Call "Optional#isPresent()" before accessing the value.(ÃŠ8øÑÙ€.
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(Ã÷Ö•ÿÿÿÿÿ8™İù¨.
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(ÉÎ˜şÿÿÿÿÿ8Í£†Ğ.
