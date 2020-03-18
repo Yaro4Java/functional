@@ -45,8 +45,11 @@ public class OrderProcessor {
 
             System.out.print("[Order Processor] tries to get Order" + (i + 1) +
                     " from cache to check its status...");
+
             if(memoryManager.getObjectFromMemoryByTag(i + 1).status != OrderStatus.COMPLETED) {
+
                 return false;
+
             }
 
         }
@@ -57,9 +60,13 @@ public class OrderProcessor {
     private void pauseInSeconds(int timeToPauseInSeconds){
 
         try {
+
             Thread.sleep(timeToPauseInSeconds * 1000);
+
         } catch (InterruptedException e) {
+
             e.printStackTrace();
+            
         }
 
     }

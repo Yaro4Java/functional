@@ -9,11 +9,15 @@ import java.util.Optional;
 public class MemoryManager {
 
     private OrderArchive archive;
+
     private OrderCache cache;
 
     public MemoryManager(OrderArchive archive, OrderCache cache) {
+
         this.archive = archive;
+
         this.cache = cache;
+
     }
 
     public Order getObjectFromMemoryByTag(int tag){
@@ -69,6 +73,7 @@ public class MemoryManager {
                 Order newOrder = new Order();
 
                 archive.addObject(newOrder);
+
                 cache.put(newOrder.getOrderID(), newOrder);
 
             }

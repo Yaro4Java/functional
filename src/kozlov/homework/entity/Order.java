@@ -5,6 +5,7 @@ public class Order {
     private static int counter;
 
     private final int orderID;
+
     public OrderStatus status;
 
     public Order() {

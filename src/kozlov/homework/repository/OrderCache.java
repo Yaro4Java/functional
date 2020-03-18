@@ -31,9 +31,11 @@ public class OrderCache implements Cache<Integer, Order> {
         dataMap = new HashMap<>();
 
         Thread cleaningThread = new Thread(new CacheCleaner());
+
         cleaningThread.setDaemon(true);
 
         System.out.println("[Cache Constructor] switches concurrent cleaning thread on - in parallel to main program thread...");
+
         cleaningThread.start();
 
         System.out.println("[Cache Constructor] has made the cache instance (to be used as a fast access storage area).\n");
@@ -68,7 +70,9 @@ public class OrderCache implements Cache<Integer, Order> {
 
     @Override
     public int size() {
+
         return dataMap.size();
+
     }
 
 
@@ -82,16 +86,19 @@ public class OrderCache implements Cache<Integer, Order> {
         public CacheDataElement(Order data) {
 
             this.data = data;
+
             insertTime = System.currentTimeMillis();
 
         }
 
         @Override
         public String toString() {
+
             return "CacheDataElement{" +
                     "data=" + data +
                     ", insertTime=" + insertTime +
                     " msec}";
+
         }
     }
 
@@ -139,7 +146,9 @@ public class OrderCache implements Cache<Integer, Order> {
                 Optional<CacheDataElement> cacheDataElement = Optional.ofNullable(dataMap.get(i + 1));
 
                 if (!cacheDataElement.isPresent()) {
+
                     continue;
+
                 }
 
                 long lifeTime = TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()
@@ -161,11 +170,15 @@ public class OrderCache implements Cache<Integer, Order> {
     }
 
     public HashMap<Integer, CacheDataElement> asMap(){
+
         return dataMap;
+
     }
 
     public boolean isEmpty(){
+
         return size() == 0;
+
     }
 
 }
